@@ -39,7 +39,7 @@
 #include "obabelUIDialogBase.h"
 #include "obabelOverlayFactory.h"
 
-#include "dychart.h"
+//#include "dychart.h"
 //#include "cutil.h"
 
 using namespace std;
