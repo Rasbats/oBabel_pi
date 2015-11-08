@@ -32,8 +32,13 @@ SET(VERSION_MAJOR "1")
 SET(VERSION_MINOR "0")
 
 #SET(CMAKE_BUILD_TYPE Debug)
+SET(wxWidgets_USE_UNICODE ON)
+SET(wxWidgets_CONFIGURATION mswu)
+
+add_definitions(-DUNICODE -D_UNICODE)
 
 INCLUDE("cmake/PluginConfigure.cmake")
+
 
 
 SET(SRC_obabel
