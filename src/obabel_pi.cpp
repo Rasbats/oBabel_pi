@@ -224,10 +224,6 @@ void obabel_pi::OnToolbarToolCallback(int id)
         wxPoint p = wxPoint(m_obabel_dialog_x, m_obabel_dialog_y);
         m_pobabelDialog->Move(0,0);        // workaround for gtk autocentre dialog behavior
         m_pobabelDialog->Move(p);
-
-        // Create the drawing factory
-        m_pobabelOverlayFactory = new obabelOverlayFactory( *m_pobabelDialog );
-        m_pobabelOverlayFactory->SetParentSize( m_display_width, m_display_height);		
         
     }
 
