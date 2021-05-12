@@ -214,7 +214,7 @@ int obabel_pi::GetToolbarToolCount(void)
 
 void obabel_pi::OnToolbarToolCallback(int id)
 {
-    if(!m_pobabelDialog)
+    if(NULL == m_pobabelDialog)
     {
 		        		
 		m_pobabelDialog = new obabelUIDialog(m_parent_window, this);
@@ -225,43 +225,9 @@ void obabel_pi::OnToolbarToolCallback(int id)
     }
 
       // Qualify the obabel dialog position
-            bool b_reset_pos = false;
-
-#ifdef __WXMSW__
-        //  Support MultiMonitor setups which an allow negative window positions.
-        //  If the requested window does not intersect any installed monitor,
-        //  then default to simple primary monitor positioning.
-            RECT frame_title_rect;
-            frame_title_rect.left =   m_obabel_dialog_x;
-            frame_title_rect.top =    m_obabel_dialog_y;
-            frame_title_rect.right =  m_obabel_dialog_x + m_obabel_dialog_sx;
-            frame_title_rect.bottom = m_obabel_dialog_y + 30;
+      bool b_reset_pos = false;
 
 
-            if(NULL == MonitorFromRect(&frame_title_rect, MONITOR_DEFAULTTONULL))
-                  b_reset_pos = true;
-#else
-       //    Make sure drag bar (title bar) of window on Client Area of screen, with a little slop...
-            wxRect window_title_rect;                    // conservative estimate
-            window_title_rect.x = m_obabel_dialog_x;
-            window_title_rect.y = m_obabel_dialog_y;
-            window_title_rect.width = m_obabel_dialog_sx;
-            window_title_rect.height = 30;
-
-            wxRect ClientRect = wxGetClientDisplayRect();
-            ClientRect.Deflate(60, 60);      // Prevent the new window from being too close to the edge
-            if(!ClientRect.Intersects(window_title_rect))
-                  b_reset_pos = true;
-
-#endif
-
-            if(b_reset_pos)
-            {
-                  m_obabel_dialog_x = 20;
-                  m_obabel_dialog_y = 170;
-                  m_obabel_dialog_sx = 300;
-                  m_obabel_dialog_sy = 540;
-            }
 
       //Toggle obabel overlay display
       m_bShowobabel = !m_bShowobabel;
