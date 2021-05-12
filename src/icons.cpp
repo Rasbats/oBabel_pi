@@ -14,7 +14,7 @@ wxBitmap *_img_babel;
 #ifdef OBABEL_USE_SVG
 #include "ocpn_plugin.h"
 wxString _svg_obabel;
-wxString _svg_obable_toggled;
+wxString _svg_obabel_toggled;
 #endif
 
 

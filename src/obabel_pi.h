@@ -64,9 +64,7 @@ public:
       wxString GetShortDescription();
       wxString GetLongDescription();
 
-//    The override PlugIn Methods
-      bool RenderOverlay(wxDC &dc, PlugIn_ViewPort *vp);
-	  bool RenderGLOverlay(wxGLContext *pcontext, PlugIn_ViewPort *vp);
+//    The override PlugIn Methods      
       void SetCursorLatLon(double lat, double lon);
       int  GetToolbarToolCount(void);
       void OnToolbarToolCallback(int id);
