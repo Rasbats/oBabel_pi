@@ -299,29 +299,6 @@ void obabel_pi::OnobabelDialogClose()
 
 }
 
-bool obabel_pi::RenderOverlay(wxDC &dc, PlugIn_ViewPort *vp)
-{
-    if(!m_pobabelDialog ||
-       !m_pobabelDialog->IsShown() ||
-       !m_pobabelOverlayFactory)
-        return false;
-
-    m_pobabelDialog->SetViewPort( vp );
-    m_pobabelOverlayFactory->RenderobabelOverlay ( dc, vp );
-    return true;
-}
-
-bool obabel_pi::RenderGLOverlay(wxGLContext *pcontext, PlugIn_ViewPort *vp)
-{
-    if(!m_pobabelDialog ||
-       !m_pobabelDialog->IsShown() ||
-       !m_pobabelOverlayFactory)
-        return false;
-
-    m_pobabelDialog->SetViewPort( vp );
-    m_pobabelOverlayFactory->RenderGLobabelOverlay ( pcontext, vp );
-    return true;
-}
 void obabel_pi::SetCursorLatLon(double lat, double lon)
 {
     if(m_pobabelDialog)

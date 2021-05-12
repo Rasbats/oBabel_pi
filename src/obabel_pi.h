@@ -37,7 +37,6 @@
 #include "config.h"
 
 #include "ocpn_plugin.h"
-#include "obabelOverlayFactory.h"
 #include "obabelUIDialog.h"
 
 //----------------------------------------------------------------------------------------------------------

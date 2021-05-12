@@ -77,9 +77,7 @@ set(PKG_INFO_URL https://opencpn.org/OpenCPN/plugins/obabel.html)
 
 SET(SRC
             src/obabel_pi.h
-            src/obabel_pi.cpp
-            src/obabelOverlayFactory.cpp
-            src/obabelOverlayFactory.h
+            src/obabel_pi.cpp           
             src/obabelUIDialogBase.cpp
             src/obabelUIDialogBase.h
             src/obabelUIDialog.cpp
