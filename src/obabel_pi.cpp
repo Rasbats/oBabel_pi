@@ -158,9 +158,6 @@ bool obabel_pi::DeInit(void)
         delete m_pobabelDialog;
         m_pobabelDialog = NULL;
     }
-   
-	delete m_pobabelOverlayFactory;
-    m_pobabelOverlayFactory = NULL;
 
     return true;
 }
