@@ -138,7 +138,8 @@ int obabel_pi::Init(void)
                                                  _("oBabel"), _T(""), NULL,
                                                  obabel_TOOL_POSITION, 0, this);
 #endif
-
+      }
+      
       return (WANTS_OVERLAY_CALLBACK |
               WANTS_OPENGL_OVERLAY_CALLBACK |
               WANTS_CURSOR_LATLON       |
