@@ -12,4 +12,9 @@ extern void initialize_images(void);
 extern wxBitmap *_img_babel_pi;
 extern wxBitmap *_img_babel;
 
+#ifdef OBABEL_USE_SVG
+extern wxString _svg_obabel;
+extern wxString _svg_obabel_toggled;
+#endif
+
 #endif /* ICONS_H */

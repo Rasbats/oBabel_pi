@@ -34,11 +34,7 @@
   #include <wx/glcanvas.h>
 #endif //precompiled headers
 
-#define     PLUGIN_VERSION_MAJOR    0
-#define     PLUGIN_VERSION_MINOR    1
-
-#define     MY_API_VERSION_MAJOR    1
-#define     MY_API_VERSION_MINOR    7
+#include "config.h"
 
 #include "ocpn_plugin.h"
 #include "obabelOverlayFactory.h"
@@ -50,7 +46,7 @@
 
 #define obabel_TOOL_POSITION    -1          // Request default positioning of toolbar tool
 
-class obabel_pi : public opencpn_plugin_17
+class obabel_pi : public opencpn_plugin_116
 {
 public:
       obabel_pi(void *ppimgr);
@@ -90,6 +86,8 @@ public:
 	  wxString m_GetDevice;
 	  wxString m_GetFormat;
 	  wxString m_GetExe;
+	  
+	  wxBitmap m_panelBitmap;
 
 private:
       bool LoadConfig(void);
@@ -111,7 +109,7 @@ private:
         
       bool              m_bobabelShowIcon;
       int               m_height;
-      bool				m_bShowobabel;
+      bool				m_bShowobabel;	  
 	  
 };
 

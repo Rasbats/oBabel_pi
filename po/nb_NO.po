@@ -1,778 +1,544 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenCPN 3.3.1006\n"
+"Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-17 19:30-0500\n"
-"PO-Revision-Date: 2013-10-14 23:57+0100\n"
-"Last-Translator: Frode Lynum <post@opencpn.kb-h.com>\n"
-"Language-Team: OpenCPN Norge <post@opencpn.kb-h.com>\n"
-"Language: Norsk\n"
+"POT-Creation-Date: 2020-07-05 10:48+0100\n"
+"PO-Revision-Date: 2016-02-25 08:05-0500\n"
+"Last-Translator: nohal <pavel@kalian.cz>\n"
+"Language-Team: Norwegian Bokmal\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: opencpn\n"
+"X-Crowdin-Language: nb\n"
+"X-Crowdin-File: /plugins/SAR_pi/po/SAR_pi.pot\n"
 #
-msgid " (Max size )"
+msgid "    SAR panel icon has NOT been loaded"
 msgstr ""
 #
-msgid " Mo )"
+#
+msgid "\""
+msgstr "\""
+#
+#
+msgid "'"
+msgstr "'"
+#
+msgid "0.1"
 msgstr ""
 #
-msgid "( Max "
+msgid "0.2"
 msgstr ""
 #
-msgid "Address used to send request eMail. (Mandatory for LINUX)"
+msgid "0.5"
 msgstr ""
 #
-msgid "Air Temp"
-msgstr "Luft temp"
+#
+msgid "1"
+msgstr "1"
+#
+msgid "1 unit only"
+msgstr ""
+#
+#
+msgid "2"
+msgstr "2"
+#
+msgid "2 units A&B"
+msgstr ""
+#
+msgid "3"
+msgstr ""
+#
+msgid "4"
+msgstr ""
+#
+msgid "5"
+msgstr ""
+#
+#
+msgid "CPU saving settings"
+msgstr "Innstillinger for CPU strømsparing"
+#
+#
+msgid "Calculate"
+msgstr "Beregn"
+#
+#
+msgid "Capture Cursor Position"
+msgstr "Lagre kursorposisjon"
+#
+#
+msgid "Capture Ship Position"
+msgstr "Lagre skipsposisjon"
+#
+#
+msgid "Convert to Degree"
+msgstr "Konverter til grader"
+#
+#
+msgid "Copy ship position (GPS fix required)"
+msgstr "Kopier skipsposisjon (GPS-lås er påkrevd)"
+#
 #
 #, fuzzy
-msgid "Air Temperature(2m)"
-msgstr "Luft temperatur"
+msgid "Creates GPX files with Search and Rescue patterns"
+msgstr ""
+"Oppretter GPX filer med\n"
+"Søk og rednings mønstre."
 #
-msgid "Apply"
+#
+msgid "Cursor"
+msgstr "Kursor"
+#
+msgid "D MM SS"
 msgstr ""
 #
-msgid "Authorize Interpolation to start at current time"
+msgid "D MM.mmm"
 msgstr ""
 #
-msgid "Barbed Arrows"
-msgstr "Spisse piler"
-#
-msgid ""
-"Before sending an email to Zygrib you have to enter your Login and Code.\n"
-"Please visit www.zygrib.org/ and follow instructions..."
+msgid "D.ddd"
 msgstr ""
 #
-msgid "Building Isobar map"
-msgstr "Bygger isobarkart"
-#
-msgid "CAPE"
-msgstr ""
-#
-msgid "Celsius"
-msgstr ""
-#
-msgid "Cloud Cover"
-msgstr "Skydekke"
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-msgid "Colors"
-msgstr "Farger"
-#
-msgid "Continue..."
-msgstr ""
-#
-msgid "Copy First Cumulative Missing Record"
-msgstr "Kopier første manglende kumulative registrering"
-#
-msgid "Copy Missing Wave Records"
-msgstr "Kopier manglende bølgeregistrering"
-#
-msgid "Current"
-msgstr "Strøm"
-#
-msgid "Data available"
-msgstr ""
-#
-msgid "Days"
-msgstr "Dager"
 #
 #, fuzzy
-msgid "Deg"
-msgstr " Gra"
+msgid "DATUM / CSP (Start of Search)"
+msgstr "Datum (Start for søket)"
 #
-msgid "Direction Arrows"
-msgstr "Retningspiler"
 #
-msgid "Display"
-msgstr "Vis"
+msgid "Degrees"
+msgstr "Grader"
+#
+#
+msgid "E"
+msgstr "Ø"
+#
+msgid "Error"
+msgstr ""
+#
+#
+msgid "Error in calculation. Please check input!"
+msgstr "Feil i kalkulering, sjekk inn-data!"
+#
 #
 #, fuzzy
-msgid "Display Iso CAPE"
-msgstr "Vis"
+msgid "Error occurred, aborting SAR calc!"
+msgstr "Feil oppstod, avbryter SAR kalkulering!"
+#
 #
 #, fuzzy
-msgid "Display Isobars"
-msgstr "Vis"
+msgid "Expanding Square"
+msgstr "SAR: Utvider firkant"
+#
+#
+msgid "Export SAR track GPX file as"
+msgstr "Eksporter SAR slepestrek GPX-fil som"
+#
 #
 #, fuzzy
-msgid "Display Isotachs"
-msgstr "Vis"
+msgid "First turn                    "
+msgstr "Leggdistanse               "
 #
-msgid "Display Isotherms"
+msgid "For this search pattern the Start Point entered is the CSP"
 msgstr ""
 #
-msgid "Error:  Can't read this File!"
-msgstr "Feil: Kan ikke lese filen!"
 #
-msgid "Error:  File does not exist!"
-msgstr "Feil: Filen eksisterer ikke"
+msgid "General settings"
+msgstr "Generelle innstillinger"
+#
+#
+msgid "Generate &GPX"
+msgstr "Generer &GPX"
+#
+msgid "IAMSAR"
+msgstr ""
+#
+msgid "Icons "
+msgstr ""
+#
 #
 #, fuzzy
-msgid "Error:  No valid data in this file!"
-msgstr "Feil: Kan ikke lese filen!"
+msgid "Initial course"
+msgstr "Ankomstkurs     "
 #
-msgid "Estimated File Size"
-msgstr ""
-#
-msgid "Fahrenheit"
-msgstr "Fahrenheit"
-#
-msgid "Feet"
-msgstr "Fot"
-#
-msgid "Forecast Model "
-msgstr ""
-#
-msgid "GRIB Data at Cursor"
-msgstr "GRIB data ved kursor"
-#
-msgid "GRIB Display Control"
-msgstr "GRIB visningskontroll"
-#
-msgid "GRIB PlugIn for OpenCPN"
-msgstr "GRIB utvidelse for OpenCPN"
-#
-msgid ""
-"GRIB PlugIn for OpenCPN\n"
-"Provides basic GRIB file overlay capabilities for several GRIB file types.\n"
-"\n"
-"Supported GRIB file types include:\n"
-"- wind direction and speed\n"
-"- significant wave height\n"
-"- sea surface temperature\n"
-"- surface current direction and speed."
-msgstr ""
-"GRIB utvidelse for OpenCPN\n"
-"Gir enkel GRIBfil overlegg mulighet for flere typer GRIB filer.\n"
-"\n"
-"Støttede GRIB filer inkluderer:\n"
-"- Vindretning og fart\n"
-"- Signifikant bølgehøyde\n"
-"- Sjøoverflate temperatur\n"
-"- Overflate strøm, retning og fart."
-#
-msgid "Generic"
-msgstr "Generisk"
-#
-msgid "Get this Code in zyGrib's forum ( This is not your password! )"
-msgstr ""
-#
-msgid "Grib"
-msgstr "GRIB"
-#
-msgid "Grib Preferences"
-msgstr "GRIB alternativer"
-#
-msgid "Grib Settings"
-msgstr "GRIB innstillinger"
-#
-msgid "Hours"
-msgstr ""
-#
-msgid "Inches"
-msgstr "Tommer"
-#
-msgid "Interpolate between gribs"
-msgstr "Interpoler mellom GRIB'er"
-#
-msgid "Interval"
-msgstr "Intervall"
 #
 #, fuzzy
-msgid "IsoBars"
-msgstr "Isobarer"
+msgid "Initial course    "
+msgstr "Ankomstkurs     "
 #
-msgid "Knots"
-msgstr "Knop"
-#
-msgid "Load File Options"
-msgstr ""
-#
-msgid "Load the Last Opened File"
-msgstr ""
-#
-msgid "Load the More Recent File in Directory"
-msgstr ""
-#
-msgid "Local Time"
-msgstr "Lokaltid"
-#
-msgid "Loop Mode"
-msgstr "Gjentaknings modus"
 #
 #, fuzzy
-msgid "MAIL Error: MAPI32.DLL is not installed or invalid on this computer!"
-msgstr "Mapi er ikke installert eller virker ikke på denne maskinen"
+msgid "Initial course        "
+msgstr "Ankomstkurs     "
+#
 #
 #, fuzzy
-msgid "Mail"
-msgstr "epost"
+msgid "Initial leg course        "
+msgstr "Ankomstkurs     "
+#
+#
+msgid "Lat "
+msgstr "Bgrad "
+#
 #
 #, fuzzy
-msgid "Mail To "
-msgstr "epost til"
+msgid "Latitude  "
+msgstr "Breddegrad  "
 #
-msgid "Meters"
-msgstr "Meter"
 #
-msgid "MilliBars"
-msgstr "Millibar"
+msgid "Leave ticked, so that you can use cursor position."
+msgstr "La være merket, slik at du kan benytte kursorposisjon."
 #
-msgid "Millimeters"
-msgstr "Millimeter"
 #
-msgid "N/A"
-msgstr "N/A"
+msgid "Leave ticked, so you can use ship's position"
+msgstr "La være merket, slik at du kan bruke skipets posisjon"
 #
-msgid "Next"
-msgstr "Neste"
-#
-msgid "Now"
-msgstr "Nå"
-#
-msgid "Numbers"
-msgstr "Nummer"
-#
-msgid "Open File"
-msgstr "Åpne fil"
 #
 #, fuzzy
-msgid "Overlay Transparency"
-msgstr "Overleggskart"
+msgid "Leg Space             "
+msgstr "Leggdistanse              "
 #
-msgid "OverlayMap"
-msgstr "Overleggskart"
-#
-msgid "Percentage"
-msgstr "Prosentvis"
-#
-msgid "Play"
-msgstr "Spill"
 #
 #, fuzzy
-msgid "Please Zoom or Scale Out to view invisible overlays:"
-msgstr "Vennligst Zoom ut eller Skaler ut for å vise skjulte "
+msgid "Leg Spacing (S)       "
+msgstr "Leggavstand                "
 #
-msgid "Pressure"
-msgstr "Trykk"
 #
-msgid "Previous"
-msgstr "Forrige"
+msgid "Lon"
+msgstr "Lgrad"
 #
-msgid "Profile"
+#
+msgid "Longitude"
+msgstr "Lengdegrad"
+#
+#
+msgid "N"
+msgstr "N"
+#
+#
+msgid "NM"
+msgstr "NM"
+#
+msgid "No Datum Point has been entered"
 msgstr ""
+#
 #
 #, fuzzy
-msgid "Rainfall"
-msgstr "Regn"
+msgid "Number of Legs  "
+msgstr "Antall legger   "
 #
-msgid "Range"
-msgstr "Rekkevidde"
-#
-msgid "Request"
-msgstr "Forespørsel"
-#
-msgid ""
-"Request can't be sent. Please verify your email systeme parameters.\n"
-"You should also have a look at your log file.\n"
-"Save or Cancel to finish..."
-msgstr ""
-#
-msgid "Resolution"
-msgstr "Oppløsning"
-#
-msgid "Save"
-msgstr ""
-#
-#
-#
-#
-#
-#
-#
-#
-#
-msgid "Sea Temp"
-msgstr "Sjøtemp"
 #
 #, fuzzy
-msgid "Sea Temperature(surf.)"
-msgstr "Havtemperatur"
+msgid "Number of Legs      "
+msgstr "Antall legger       "
 #
-msgid "Select a GRIB file"
-msgstr "Velg en GRIB fil"
-#
-msgid "Send"
-msgstr "Send"
-#
-msgid "Sender eMail Address"
-msgstr ""
-#
-msgid "Settings"
-msgstr "Innstillinger"
-#
-msgid "Size"
-msgstr "Størrelse"
-#
-msgid "Slices per Update"
-msgstr "Stykker per oppdatering"
-#
-msgid "Slices per hour"
-msgstr "Stykker per time"
-#
-msgid "Spacing"
-msgstr "Mellomrom"
-#
-msgid "Start Options"
-msgstr ""
-#
-msgid "Start at the first forecast in GRIB file"
-msgstr ""
-#
-msgid "Start at the nearest forecast to current time"
-msgstr ""
-#
-msgid "Stop"
-msgstr "Stopp"
-#
-msgid ""
-"The file size limit is overcome!\n"
-"You can zoom in and/or change parameters..."
-msgstr ""
-#
-msgid ""
-"This file contains data for particular time intervals but you have chosen to "
-"display different intervals.\n"
-"Please consider that the values will be interpolated."
-msgstr ""
-#
-msgid "This is your zyGrib's forum access Login"
-msgstr ""
-#
-msgid "Time Options"
-msgstr ""
 #
 #, fuzzy
-msgid "Time Range"
-msgstr "Rekkevidde"
+msgid "Number of Legs        "
+msgstr "Antall legger       "
 #
-msgid "UTC"
-msgstr "UTC"
-#
-msgid "Units"
-msgstr "Enheter"
-#
-msgid "Updates per Second"
-msgstr "Oppdateringer per sekund"
-#
-msgid "Use Gradual Colors"
-msgstr "Bruk gradiente farger"
-#
-msgid "Use High Definition Graphics"
-msgstr "Benytt HD grafikk"
-#
-msgid "Warning!"
-msgstr ""
-#
-msgid "Warning:  Empty directory!"
-msgstr ""
 #
 #, fuzzy
-msgid "Waves"
-msgstr "Bølge"
+msgid "Number of passes"
+msgstr "Antall firkanter"
+#
+msgid "Oil Rig (Quadrant Single)"
+msgstr ""
+#
+#
+msgid "Opacity"
+msgstr "Gjennomsiktighet"
+#
+msgid "PORT"
+msgstr ""
+#
 #
 #, fuzzy
-msgid "WavesModel"
-msgstr "Modell"
+msgid "Parallel Track"
+msgstr "Parallellsøk"
 #
-msgid "Wind"
-msgstr "Vind"
 #
-msgid "Wind Gust"
-msgstr "Vindkast"
+msgid "Route Preferences"
+msgstr "Egenskaper for rute"
 #
-msgid "Write and send eMail request"
+#
+#, fuzzy
+msgid "Route for Ship           "
+msgstr "Søkefart             "
+#
+#
+msgid "S"
+msgstr "S"
+#
+#
+msgid "SAR"
+msgstr "SAR"
+#
+#
+#, fuzzy
+msgid "SAR Plugin by SaltyPaws/Rasbats"
+msgstr "SAR utvidelse av SaltyPaws"
+#
+#
+msgid "SAR preferences"
+msgstr "SAR-egenskaper"
+#
+msgid "STARBOARD"
 msgstr ""
 #
-msgid ""
-"You have chosen to authorize interpolation.\n"
-"Don't forget that data displayed at current time will not be real but "
-"interpolated!"
+#
+#, fuzzy
+msgid "Search Distance / Time"
+msgstr "Distansesøk"
+#
+#
+#, fuzzy
+msgid "Search Leg length     "
+msgstr "Søketid        "
+#
+#
+#, fuzzy
+msgid "Search Method  "
+msgstr "Søketid        "
+#
+#
+#, fuzzy
+msgid "Search Radius      "
+msgstr "Søketid        "
+#
+#
+#, fuzzy
+msgid "Search Speed       "
+msgstr "Søkefart        "
+#
+#
+#, fuzzy
+msgid "Search Speed           "
+msgstr "Søkefart             "
+#
+#
+msgid "Search Speed             "
+msgstr "Søkefart             "
+#
+#
+msgid "Search and Rescue Patterns"
+msgstr "Søk og rednings mønstre"
+#
+#
+msgid "Sector Search"
+msgstr "Sektorsøk"
+#
+msgid "Select SAR Datum Point"
 msgstr ""
+#
+#
+msgid "Ship"
+msgstr "Skip"
+#
+#
+#, fuzzy
+msgid "Start Position"
+msgstr "Lagre skipsposisjon"
+#
 #
 #, fuzzy
 msgid ""
-"Your request is ready. An email is prepared in your email environment. \n"
-"You have just to verify and send it...\n"
-"Save or Cancel to finish...or Continue..."
+"To copy the cursor location place the cursor on the chart \n"
+"     ...and press <CTRL>+S"
 msgstr ""
-"Din forespørsel er klar. En epost er klargjort i din epostleser.\n"
-"Du trenger kun å klikke 'send' for å sende den.\n"
-"OK for å gå videre..."
+"For å kunne kopiere kursorposisjon, velg enten breddegrad eller lengdegrad "
+"koordinatboksen og trykk <CTRL>+S."
+#
 #
 #, fuzzy
-msgid ""
-"Your request was sent \n"
-"(if your system has an MTA configured and is able to send email).\n"
-"Save or Cancel to finish...or Continue..."
-msgstr ""
-"Din forespørsel ble sendt (hvis ditt system har en MTA konfigurert og kan "
-"sende epost).\n"
-"OK for å gå videre..."
+msgid "Track space (S)          "
+msgstr "Søkefart             "
 #
-msgid "inHG"
-msgstr ""
-#
-msgid "j/kg"
-msgstr ""
-#
-msgid "km/h"
-msgstr ""
-#
-msgid "m/s"
-msgstr ""
-#
-msgid "mmHG"
-msgstr "mmHG"
-#
-msgid "mph"
-msgstr ""
-#
-msgid "playback"
-msgstr "avspilling"
-#
-msgid "zyGrib Code"
-msgstr ""
-#
-msgid "zyGrib Login"
+msgid "USCG"
 msgstr ""
 #
 #
-#~ msgid " (Dup)"
-#~ msgstr " (Dup)"
+msgid "W"
+msgstr "V"
+#
+msgid "Waypoint names "
+msgstr ""
+#
+msgid "Waypoint names     "
+msgstr ""
+#
+#
+msgid "error in input range validation"
+msgstr "feil i validering av inndata-område"
+#
+#
+msgid "hr"
+msgstr "tim"
+#
+#
+msgid "kts"
+msgstr "kn"
+#
+#
+msgid "n"
+msgstr "n"
 #
 #
 #
 #
 #
+#~ msgid "Approach course"
+#~ msgstr "Anløpskurs"
 #
 #
 #
 #
 #
-#
-#
-#
-#~ msgid " data"
-#~ msgstr " data"
-#
-#
-#~ msgid "Action"
-#~ msgstr "Utfør"
-#
-#
-#~ msgid "Celcius"
-#~ msgstr "Celcius"
-#
-#
-#~ msgid "Cloud"
-#~ msgstr "Sky"
+#~ msgid "Decimal Degree"
+#~ msgstr "Desimal grader"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Data Display Preferences"
-#~ msgstr "GRIB innstillinger"
-#
-#
-#~ msgid "Error"
-#~ msgstr "Feil"
-#
-#
-#~ msgid "Failed to send mail message"
-#~ msgstr "Kunne ikke sende epost melding"
-#
-#
-#
-#~ msgid "GRIB"
-#~ msgstr "GRIB"
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "GRIB File Directory"
-#~ msgstr "GRIB fil katalog"
-#
-#
-#~ msgid "KPH"
-#~ msgstr "KMT"
-#
-#
-#~ msgid "M/S"
-#~ msgstr "M/S"
-#
-#
-#~ msgid "MPH"
-#~ msgstr "MPT"
-#
-#
-#~ msgid "MyLabel"
-#~ msgstr "MittMerke"
-#
-#
-#~ msgid "OpenCpn failed to logon! Please verify your eMail environment"
-#~ msgstr "OpenCPN klarte ikke å logge inn! Vennligst sjekk ditt epost system"
-#
-#
-#~ msgid "Parameters"
-#~ msgstr "Parametre"
-#
-#
-#~ msgid "Period"
-#~ msgstr "Periode"
+#~ msgid "Degree, Minutes"
+#~ msgstr "Grader"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Air Temp.(2m) GRIB"
-#~ msgstr "Vennligst Zoom eller Skaler ut for å vise skjulte SJØTEMP GRIB"
+#~ msgid "ES"
+#~ msgstr "S"
 #
 #
 #
 #
 #
-#
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed CURRENT GRIB"
-#~ msgstr "Vennligst Zoom eller Skaler ut for å vise skjulte SJØSTRØM GRIB"
-#
-#
-#
-#
-#
-#
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Clouds Cover GRIB"
-#~ msgstr "Vennligst Zoom eller Skaler ut for å vise skjulte SJØSTRØM GRIB"
+#~ msgid ""
+#~ "Expanding Square\n"
+#~ "         Search"
+#~ msgstr ""
+#~ "Ekspanderende firkant-\n"
+#~ " søk"
 #
 #
 #
 #
 #
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Sea Surf.Temp. GRIB"
-#~ msgstr "Vennligst Zoom eller Skaler ut for å vise skjulte SJØTEMP GRIB"
+#~ msgid "For Ship Number      "
+#~ msgstr "For skip nummer      "
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Total Rainfall GRIB"
-#~ msgstr "Vennligst Zoom eller Skaler ut for å vise skjulte CRAIN GRIB"
-#
-#
-#~ msgid "Precipitation"
-#~ msgstr "Nedbør"
+#~ msgid "Leg Distance        "
+#~ msgstr "Leggdistanse          "
 #
 #
 #
 #
 #
-#, fuzzy
-#~ msgid "Pressure (MSL)"
-#~ msgstr "Lufttrykk, mb"
-#
-#
-#~ msgid "Quickscat"
-#~ msgstr "Quickscat"
-#
-#
-#~ msgid "Ref : "
-#~ msgstr "Ref : "
-#
-#
-#~ msgid "Request Pofile"
-#~ msgstr "Forespør profil"
+#~ msgid "Number of cycles"
+#~ msgstr "Antall sykluser"
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-#
+#~ msgid "Oil Rig Search"
+#~ msgstr "Oljerigg søk"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Request Preferences"
-#~ msgstr "GRIB innstillinger"
-#
-#
-#~ msgid "SeaTemp"
-#~ msgstr "Havtemp"
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "Show GRIB icon"
-#~ msgstr "Vis GRIB ikon"
+#~ msgid "PS"
+#~ msgstr "S"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Sign.Wave Height"
-#~ msgstr "Signifikant bølgehøyde, m"
+#~ msgid "Parallel Track Search"
+#~ msgstr "Parallellsøk"
 #
 #
 #
 #
 #
+#~ msgid "Results"
+#~ msgstr "Resultat"
 #
 #
 #
 #
 #
+#~ msgid "Route"
+#~ msgstr "Rute"
 #
 #
 #
 #
 #
+#~ msgid "SAR: Oil Rig"
+#~ msgstr "SAR: Oljerigg"
 #
 #
 #
 #
 #
+#~ msgid "SAR: Sector Search"
+#~ msgstr "SAR: Sektorsøk"
 #
 #
 #
 #
 #
+#~ msgid "SAR: Trackline"
+#~ msgstr "SAR: Sporings-strek"
 #
 #
 #
-#~ msgid "WARNING:  QuickScat GRIB data is %d hours old."
-#~ msgstr "ADVARSEL:  QuickSCAT GRIB data er %d timer gammel."
+#
+#
+#~ msgid "Search Pattern name for GPX file"
+#~ msgstr "Søkemønster navn for GPX-fil"
+#
+#
+#
+#
+#
+#~ msgid "Search Speed         "
+#~ msgstr "Søkefart         "
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Wind Direction(10m)"
-#~ msgstr "Vindretning"
-#
-#
-#~ msgid "Wind Scat"
-#~ msgstr "Vindscat"
+#~ msgid "VS"
+#~ msgstr "S"
 #
 #
 #
 #
 #
-#, fuzzy
-#~ msgid "Wind Speed and Direction(10m)"
-#~ msgstr "Vindretning"
+#~ msgid "\\u00b0"
+#~ msgstr "\\u00b0"
 #
 #
 #
 #
 #
-#, fuzzy
-#~ msgid "Wind Speed(10m)"
-#~ msgstr "Vindhastighet, Knop"
-#
-#
-#~ msgid "Zone"
-#~ msgstr "Sone"
-#
-#
-#~ msgid "eMail error"
-#~ msgstr "epost feil"
+#~ msgid "\\u00b0 ' \""
+#~ msgstr "\\u00b0 ' \""

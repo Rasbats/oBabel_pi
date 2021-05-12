@@ -1,728 +1,544 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: opencpn 1.3.6 (Pt01)\n"
+"Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-17 19:30-0500\n"
-"PO-Revision-Date: 2010-02-05 16:06+0100\n"
-"Last-Translator: as <as400big@gmail.com>\n"
-"Language-Team: Minhota <zemaria@zemaria.biz>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-07-05 10:48+0100\n"
+"PO-Revision-Date: 2016-02-27 08:05-0500\n"
+"Last-Translator: nohal <pavel@kalian.cz>\n"
+"Language-Team: Portuguese, Brazilian\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: PORTUGAL\n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: opencpn\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: /plugins/SAR_pi/po/SAR_pi.pot\n"
 #
-msgid " (Max size )"
+msgid "    SAR panel icon has NOT been loaded"
 msgstr ""
 #
-msgid " Mo )"
+#
+msgid "\""
+msgstr "\""
+#
+#
+msgid "'"
+msgstr "'"
+#
+msgid "0.1"
 msgstr ""
 #
-msgid "( Max "
+msgid "0.2"
 msgstr ""
 #
-msgid "Address used to send request eMail. (Mandatory for LINUX)"
+msgid "0.5"
 msgstr ""
 #
-msgid "Air Temp"
+#
+msgid "1"
+msgstr "1"
+#
+msgid "1 unit only"
 msgstr ""
 #
-msgid "Air Temperature(2m)"
+#
+msgid "2"
+msgstr "2"
+#
+msgid "2 units A&B"
 msgstr ""
 #
-msgid "Apply"
+msgid "3"
 msgstr ""
 #
-msgid "Authorize Interpolation to start at current time"
+msgid "4"
 msgstr ""
 #
-msgid "Barbed Arrows"
+msgid "5"
 msgstr ""
 #
+#
+msgid "CPU saving settings"
+msgstr "Salvar as configurações de CPU"
+#
+#
+msgid "Calculate"
+msgstr "Calcular"
+#
+#
+msgid "Capture Cursor Position"
+msgstr "Capturar posição do cursor"
+#
+#
+msgid "Capture Ship Position"
+msgstr "Capturar posição do navio"
+#
+#
+msgid "Convert to Degree"
+msgstr "Converter para grau"
+#
+#
+msgid "Copy ship position (GPS fix required)"
+msgstr "Copiar posição do navio (necessário sinal GPS)"
+#
+#
+#, fuzzy
+msgid "Creates GPX files with Search and Rescue patterns"
+msgstr ""
+"Criar arquivos GPX com\n"
+"padrões de busca e salvamento."
+#
+#
+msgid "Cursor"
+msgstr "Cursor"
+#
+msgid "D MM SS"
+msgstr ""
+#
+msgid "D MM.mmm"
+msgstr ""
+#
+msgid "D.ddd"
+msgstr ""
+#
+#
+#, fuzzy
+msgid "DATUM / CSP (Start of Search)"
+msgstr "Datum (Início de busca)"
+#
+#
+msgid "Degrees"
+msgstr "Graus"
+#
+#
+msgid "E"
+msgstr "E"
+#
+msgid "Error"
+msgstr ""
+#
+#
+msgid "Error in calculation. Please check input!"
+msgstr "Erro no cálculo. Por favor, verifique a entrada!"
+#
+#
+#, fuzzy
+msgid "Error occurred, aborting SAR calc!"
+msgstr "Ocorreu um erro, abortando o calculo do SAR!"
+#
+#
+#, fuzzy
+msgid "Expanding Square"
+msgstr "SAR: Expandindo quadrados"
+#
+#
+msgid "Export SAR track GPX file as"
+msgstr "Exportar SAR faixa de arquivo GPX como"
+#
+#
+#, fuzzy
+msgid "First turn                    "
+msgstr "Comprimento da perna               "
+#
+msgid "For this search pattern the Start Point entered is the CSP"
+msgstr ""
+#
+#
+msgid "General settings"
+msgstr "Definições gerais"
+#
+#
+msgid "Generate &GPX"
+msgstr "Gerar &GPX"
+#
+msgid "IAMSAR"
+msgstr ""
+#
+msgid "Icons "
+msgstr ""
+#
+#
+#, fuzzy
+msgid "Initial course"
+msgstr "Rumo de aproximação     "
+#
+#
+#, fuzzy
+msgid "Initial course    "
+msgstr "Rumo de aproximação     "
+#
+#
+#, fuzzy
+msgid "Initial course        "
+msgstr "Rumo de aproximação     "
+#
+#
+#, fuzzy
+msgid "Initial leg course        "
+msgstr "Rumo de aproximação     "
+#
+#
+msgid "Lat "
+msgstr "Lat "
+#
+#
+#, fuzzy
+msgid "Latitude  "
+msgstr "Latitude  "
+#
+#
+msgid "Leave ticked, so that you can use cursor position."
+msgstr "Deixar marcado, para que possa usar a posição do cursor."
+#
+#
+msgid "Leave ticked, so you can use ship's position"
+msgstr "Deixar marcada, então você pode usar a posição do navio"
+#
+#
+#, fuzzy
+msgid "Leg Space             "
+msgstr "Comprimento da perna              "
+#
+#
+#, fuzzy
+msgid "Leg Spacing (S)       "
+msgstr "Distancia entre pernas                "
+#
+#
+msgid "Lon"
+msgstr "Lon"
+#
+#
+msgid "Longitude"
+msgstr "Longitude"
+#
+#
+msgid "N"
+msgstr "N"
+#
+#
+msgid "NM"
+msgstr "NM"
+#
+msgid "No Datum Point has been entered"
+msgstr ""
+#
+#
+#, fuzzy
+msgid "Number of Legs  "
+msgstr "Numero de pernas   "
+#
+#
+#, fuzzy
+msgid "Number of Legs      "
+msgstr "Numero de pernas       "
+#
+#
+#, fuzzy
+msgid "Number of Legs        "
+msgstr "Numero de pernas       "
+#
+#
+#, fuzzy
+msgid "Number of passes"
+msgstr "Numero de quadrados"
+#
+msgid "Oil Rig (Quadrant Single)"
+msgstr ""
+#
+#
+msgid "Opacity"
+msgstr "Opacidade"
+#
+msgid "PORT"
+msgstr ""
+#
+#
+#, fuzzy
+msgid "Parallel Track"
+msgstr "Busca paralela"
+#
+#
+msgid "Route Preferences"
+msgstr "Preferências de rota"
+#
+#
+#, fuzzy
+msgid "Route for Ship           "
+msgstr "Velocidade de busca             "
+#
+#
+msgid "S"
+msgstr "S"
+#
+#
+msgid "SAR"
+msgstr "SAR"
+#
+#
+#, fuzzy
+msgid "SAR Plugin by SaltyPaws/Rasbats"
+msgstr "SAR Plugin por SaltyPaws"
+#
+#
+msgid "SAR preferences"
+msgstr "Preferências SAR"
+#
+msgid "STARBOARD"
+msgstr ""
+#
+#
+#, fuzzy
+msgid "Search Distance / Time"
+msgstr "Distancia de busca"
+#
+#
+#, fuzzy
+msgid "Search Leg length     "
+msgstr "Tempo de busca        "
+#
+#
+#, fuzzy
+msgid "Search Method  "
+msgstr "Tempo de busca        "
+#
+#
+#, fuzzy
+msgid "Search Radius      "
+msgstr "Tempo de busca        "
+#
+#
+#, fuzzy
+msgid "Search Speed       "
+msgstr "Velocidade de busca        "
+#
+#
+#, fuzzy
+msgid "Search Speed           "
+msgstr "Velocidade de busca             "
+#
+#
+msgid "Search Speed             "
+msgstr "Velocidade de busca             "
+#
+#
+msgid "Search and Rescue Patterns"
+msgstr "Padrões de Busca e Salvamento"
+#
+#
+msgid "Sector Search"
+msgstr "Busca por sector"
+#
+msgid "Select SAR Datum Point"
+msgstr ""
+#
+#
+msgid "Ship"
+msgstr "Navio"
+#
+#
+#, fuzzy
+msgid "Start Position"
+msgstr "Capturar posição do navio"
+#
+#
+#, fuzzy
 msgid ""
-"Before sending an email to Zygrib you have to enter your Login and Code.\n"
-"Please visit www.zygrib.org/ and follow instructions..."
+"To copy the cursor location place the cursor on the chart \n"
+"     ...and press <CTRL>+S"
+msgstr ""
+"Para copiar a localização do cursor, escolha a Latitude ou Longitude na caixa "
+"e pressione <CTRL>+S."
+#
+#
+#, fuzzy
+msgid "Track space (S)          "
+msgstr "Velocidade de busca             "
+#
+msgid "USCG"
 msgstr ""
 #
-msgid "Building Isobar map"
+#
+msgid "W"
+msgstr "W"
+#
+msgid "Waypoint names "
 msgstr ""
 #
-msgid "CAPE"
-msgstr ""
-#
-msgid "Celsius"
-msgstr ""
-#
-msgid "Cloud Cover"
+msgid "Waypoint names     "
 msgstr ""
 #
 #
+msgid "error in input range validation"
+msgstr "erro na validação de intervalo de entrada"
+#
+#
+msgid "hr"
+msgstr "hr"
+#
+#
+msgid "kts"
+msgstr "KTs"
+#
+#
+msgid "n"
+msgstr "n"
 #
 #
 #
 #
 #
+#~ msgid "Approach course"
+#~ msgstr "Rumo de aproximação"
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
+#~ msgid "Decimal Degree"
+#~ msgstr "Graus decimais"
 #
 #
 #
 #
 #
 #, fuzzy
-msgid "Colors"
-msgstr "Fechar"
+#~ msgid "Degree, Minutes"
+#~ msgstr "Graus"
 #
-msgid "Continue..."
-msgstr ""
-#
-msgid "Copy First Cumulative Missing Record"
-msgstr ""
-#
-msgid "Copy Missing Wave Records"
-msgstr ""
-#
-msgid "Current"
-msgstr ""
-#
-msgid "Data available"
-msgstr ""
-#
-msgid "Days"
-msgstr ""
-#
-msgid "Deg"
-msgstr ""
-#
-msgid "Direction Arrows"
-msgstr ""
-#
-msgid "Display"
-msgstr ""
-#
-msgid "Display Iso CAPE"
-msgstr ""
-#
-msgid "Display Isobars"
-msgstr ""
-#
-msgid "Display Isotachs"
-msgstr ""
-#
-msgid "Display Isotherms"
-msgstr ""
-#
-msgid "Error:  Can't read this File!"
-msgstr ""
-#
-msgid "Error:  File does not exist!"
-msgstr ""
-#
-msgid "Error:  No valid data in this file!"
-msgstr ""
-#
-msgid "Estimated File Size"
-msgstr ""
-#
-msgid "Fahrenheit"
-msgstr ""
-#
-msgid "Feet"
-msgstr ""
-#
-msgid "Forecast Model "
-msgstr ""
-#
-msgid "GRIB Data at Cursor"
-msgstr ""
-#
-#
-#
-#
-msgid "GRIB Display Control"
-msgstr "Controlo Visualização GRIB"
-#
-msgid "GRIB PlugIn for OpenCPN"
-msgstr ""
-#
-msgid ""
-"GRIB PlugIn for OpenCPN\n"
-"Provides basic GRIB file overlay capabilities for several GRIB file types.\n"
-"\n"
-"Supported GRIB file types include:\n"
-"- wind direction and speed\n"
-"- significant wave height\n"
-"- sea surface temperature\n"
-"- surface current direction and speed."
-msgstr ""
-#
-msgid "Generic"
-msgstr ""
-#
-msgid "Get this Code in zyGrib's forum ( This is not your password! )"
-msgstr ""
-#
-msgid "Grib"
-msgstr ""
-#
-msgid "Grib Preferences"
-msgstr ""
-#
-msgid "Grib Settings"
-msgstr ""
-#
-msgid "Hours"
-msgstr ""
-#
-msgid "Inches"
-msgstr ""
-#
-msgid "Interpolate between gribs"
-msgstr ""
-#
-msgid "Interval"
-msgstr ""
-#
-msgid "IsoBars"
-msgstr ""
-#
-msgid "Knots"
-msgstr ""
-#
-msgid "Load File Options"
-msgstr ""
-#
-msgid "Load the Last Opened File"
-msgstr ""
-#
-msgid "Load the More Recent File in Directory"
-msgstr ""
-#
-msgid "Local Time"
-msgstr ""
-#
-msgid "Loop Mode"
-msgstr ""
-#
-msgid "MAIL Error: MAPI32.DLL is not installed or invalid on this computer!"
-msgstr ""
-#
-msgid "Mail"
-msgstr ""
-#
-msgid "Mail To "
-msgstr ""
-#
-msgid "Meters"
-msgstr ""
-#
-msgid "MilliBars"
-msgstr ""
-#
-msgid "Millimeters"
-msgstr ""
-#
-msgid "N/A"
-msgstr ""
-#
-msgid "Next"
-msgstr ""
-#
-msgid "Now"
-msgstr ""
-#
-msgid "Numbers"
-msgstr ""
-#
-msgid "Open File"
-msgstr ""
-#
-msgid "Overlay Transparency"
-msgstr ""
-#
-msgid "OverlayMap"
-msgstr ""
-#
-msgid "Percentage"
-msgstr ""
-#
-msgid "Play"
-msgstr ""
 #
 #
 #
 #
 #, fuzzy
-msgid "Please Zoom or Scale Out to view invisible overlays:"
-msgstr "Ajuste Zoom ou Escala para ver HTSGW GRIB escondido"
+#~ msgid "ES"
+#~ msgstr "S"
 #
 #
 #
 #
-#, fuzzy
-msgid "Pressure"
-msgstr "Pressão, mBar"
 #
-msgid "Previous"
-msgstr ""
+#~ msgid ""
+#~ "Expanding Square\n"
+#~ "         Search"
+#~ msgstr ""
+#~ "Expandir Square\n"
+#~ "Pesquisar"
 #
-msgid "Profile"
-msgstr ""
 #
-msgid "Rainfall"
-msgstr ""
 #
-msgid "Range"
-msgstr ""
 #
-msgid "Request"
-msgstr ""
 #
-msgid ""
-"Request can't be sent. Please verify your email systeme parameters.\n"
-"You should also have a look at your log file.\n"
-"Save or Cancel to finish..."
-msgstr ""
-#
-msgid "Resolution"
-msgstr ""
-#
-msgid "Save"
-msgstr ""
-#
-msgid "Sea Temp"
-msgstr ""
-#
-msgid "Sea Temperature(surf.)"
-msgstr ""
-#
-#
-#
-#
-#, fuzzy
-msgid "Select a GRIB file"
-msgstr "Pasta de Ficheiros GRIB"
-#
-msgid "Send"
-msgstr ""
-#
-msgid "Sender eMail Address"
-msgstr ""
-#
-msgid "Settings"
-msgstr ""
-#
-msgid "Size"
-msgstr ""
-#
-msgid "Slices per Update"
-msgstr ""
-#
-msgid "Slices per hour"
-msgstr ""
-#
-msgid "Spacing"
-msgstr ""
-#
-msgid "Start Options"
-msgstr ""
-#
-msgid "Start at the first forecast in GRIB file"
-msgstr ""
-#
-msgid "Start at the nearest forecast to current time"
-msgstr ""
-#
-msgid "Stop"
-msgstr ""
-#
-msgid ""
-"The file size limit is overcome!\n"
-"You can zoom in and/or change parameters..."
-msgstr ""
-#
-msgid ""
-"This file contains data for particular time intervals but you have chosen to "
-"display different intervals.\n"
-"Please consider that the values will be interpolated."
-msgstr ""
-#
-msgid "This is your zyGrib's forum access Login"
-msgstr ""
-#
-msgid "Time Options"
-msgstr ""
-#
-msgid "Time Range"
-msgstr ""
-#
-msgid "UTC"
-msgstr ""
-#
-msgid "Units"
-msgstr ""
-#
-msgid "Updates per Second"
-msgstr ""
-#
-msgid "Use Gradual Colors"
-msgstr ""
-#
-#
-#
-#
-msgid "Use High Definition Graphics"
-msgstr "Usar Gráficos Alta Definição"
-#
-msgid "Warning!"
-msgstr ""
-#
-msgid "Warning:  Empty directory!"
-msgstr ""
-#
-msgid "Waves"
-msgstr ""
-#
-msgid "WavesModel"
-msgstr ""
-#
-msgid "Wind"
-msgstr ""
-#
-msgid "Wind Gust"
-msgstr ""
-#
-msgid "Write and send eMail request"
-msgstr ""
-#
-msgid ""
-"You have chosen to authorize interpolation.\n"
-"Don't forget that data displayed at current time will not be real but "
-"interpolated!"
-msgstr ""
-#
-msgid ""
-"Your request is ready. An email is prepared in your email environment. \n"
-"You have just to verify and send it...\n"
-"Save or Cancel to finish...or Continue..."
-msgstr ""
-#
-msgid ""
-"Your request was sent \n"
-"(if your system has an MTA configured and is able to send email).\n"
-"Save or Cancel to finish...or Continue..."
-msgstr ""
-#
-msgid "inHG"
-msgstr ""
-#
-msgid "j/kg"
-msgstr ""
-#
-msgid "km/h"
-msgstr ""
-#
-msgid "m/s"
-msgstr ""
-#
-msgid "mmHG"
-msgstr ""
-#
-msgid "mph"
-msgstr ""
-#
-msgid "playback"
-msgstr ""
-#
-msgid "zyGrib Code"
-msgstr ""
-#
-msgid "zyGrib Login"
-msgstr ""
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+#~ msgid "For Ship Number      "
+#~ msgstr "Para número do barco      "
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid " data"
-#~ msgstr "Dados GRIB"
+#~ msgid "Leg Distance        "
+#~ msgstr "Comprimento da perna          "
 #
 #
 #
 #
 #
-#
-#~ msgid "GRIB"
-#~ msgstr "GRIB"
-#
+#~ msgid "Number of cycles"
+#~ msgstr "Número de ciclos"
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "GRIB File Directory"
-#~ msgstr "Pasta de Ficheiros GRIB"
-#
-#
-#
+#~ msgid "Oil Rig Search"
+#~ msgstr "Procurar Plataforma Petrolifera"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Air Temp.(2m) GRIB"
-#~ msgstr "Ajuste Zoom ou Escala para ver HTSGW GRIB escondido"
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed CURRENT GRIB"
-#~ msgstr "Ajuste Zoom ou Escala para ver CRAIN GRIB escondido"
-#
-#
-#
-#
+#~ msgid "PS"
+#~ msgstr "S"
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Clouds Cover GRIB"
-#~ msgstr "Ajuste Zoom ou Escala para ver CRAIN GRIB escondido"
+#~ msgid "Parallel Track Search"
+#~ msgstr "Busca paralela"
 #
 #
 #
 #
 #
-#
-#
-#
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Sea Surf.Temp. GRIB"
-#~ msgstr "Ajuste Zoom ou Escala para ver HTSGW GRIB escondido"
+#~ msgid "Results"
+#~ msgstr "Resultados"
 #
 #
 #
 #
 #
-#
-#
-#
-#, fuzzy
-#~ msgid "Please Zoom or Scale Out to view suppressed Total Rainfall GRIB"
-#~ msgstr "Ajuste Zoom ou Escala para ver CRAIN GRIB escondido"
+#~ msgid "Route"
+#~ msgstr "Rota"
 #
 #
 #
 #
 #
-#
-#
-#
-#, fuzzy
-#~ msgid "Pressure (MSL)"
-#~ msgstr "Pressão, mBar"
+#~ msgid "SAR: Oil Rig"
+#~ msgstr "SAR: Plataforma Petrolífera"
 #
 #
 #
 #
 #
+#~ msgid "SAR: Sector Search"
+#~ msgstr "SAR: Busca por setores"
 #
 #
 #
 #
 #
+#~ msgid "SAR: Trackline"
+#~ msgstr "SAR: Linha de rumo"
 #
 #
 #
 #
 #
+#~ msgid "Search Pattern name for GPX file"
+#~ msgstr "Busca o nome padrão para o arquivo GPX"
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "Show GRIB icon"
-#~ msgstr "Mostrar Ícone GRIB"
-#
-#
-#
+#~ msgid "Search Speed         "
+#~ msgstr "Velocidade de busca         "
 #
 #
 #
 #
 #
 #, fuzzy
-#~ msgid "Sign.Wave Height"
-#~ msgstr "Altura de Vaga Significativa, m"
+#~ msgid "VS"
+#~ msgstr "S"
 #
 #
 #
 #
 #
+#~ msgid "\\u00b0"
+#~ msgstr "\\u00b0"
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "WARNING:  QuickScat GRIB data is %d hours old."
-#~ msgstr "ATENÇÃO:  Os dados GRIB QuickScat já têm %d horas atraso."
-#
-#
-#
-#
-#
-#
-#
-#
-#, fuzzy
-#~ msgid "Wind Direction(10m)"
-#~ msgstr "Direcção Vento"
-#
-#
-#
-#
-#
-#
-#
-#
-#, fuzzy
-#~ msgid "Wind Speed and Direction(10m)"
-#~ msgstr "Direcção Vento"
-#
-#
-#
-#
-#
-#
-#
-#
-#, fuzzy
-#~ msgid "Wind Speed(10m)"
-#~ msgstr "Velocidade Vento, Kts."
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#~ msgid "Wind Speed, Kts."
-#~ msgstr "Velocidade Vento, Kts."
+#~ msgid "\\u00b0 ' \""
+#~ msgstr "\\u00b0 ' \""

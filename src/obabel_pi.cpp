@@ -68,9 +68,31 @@ obabel_pi::obabel_pi(void *ppimgr)
       :opencpn_plugin_17(ppimgr)
 {
       // Create the PlugIn icons
-      initialize_images();
-      m_bShowobabel = false;
-	  
+    initialize_images();
+
+    wxFileName fn;
+
+    auto path = GetPluginDataDir("obabel_pi");
+    fn.SetPath(path);
+    fn.AppendDir("data");
+    fn.SetFullName("obabel_panel_icon.png");
+
+    path = fn.GetFullPath();
+
+    wxInitAllImageHandlers();
+
+    wxLogDebug(wxString("Using icon path: ") + path);
+    if (!wxImage::CanRead(path)) {
+        wxLogDebug("Initiating image handlers.");
+        wxInitAllImageHandlers();
+    }
+    wxImage panelIcon(path);
+    if (panelIcon.IsOk())
+        m_panelBitmap = wxBitmap(panelIcon);
+    else
+        wxLogWarning("oBabel panel icon has NOT been loaded");
+ 
+    m_bShowobabel = false;	  
 }
 
 obabel_pi::~obabel_pi(void)
@@ -104,10 +126,18 @@ int obabel_pi::Init(void)
       m_parent_window = GetOCPNCanvasWindow();
 
       //    This PlugIn needs a toolbar icon, so request its insertion if enabled locally
-    //  if(m_bobabelShowIcon)
-          m_leftclick_tool_id = InsertPlugInTool(_T(""), _img_babel, _img_babel, wxITEM_CHECK,
-                                                 _("obabel"), _T(""), NULL,
+      if (m_bobabelShowIcon) {
+#ifdef OBABEL_USE_SVG
+        m_leftclick_tool_id = InsertPlugInToolSVG(_T( "oBabel" ),
+            _svg_obabel, _svg_obabel, _svg_obabel_toggled,
+            wxITEM_CHECK, _("oBabel"), _T( "" ), NULL,
+            obabel_TOOL_POSITION, 0, this);
+#else
+
+        m_leftclick_tool_id = InsertPlugInTool(_T(""), _img_babel, _img_babel, wxITEM_CHECK,
+                                                 _("oBabel"), _T(""), NULL,
                                                  obabel_TOOL_POSITION, 0, this);
+#endif
 
       return (WANTS_OVERLAY_CALLBACK |
               WANTS_OPENGL_OVERLAY_CALLBACK |
@@ -115,7 +145,6 @@ int obabel_pi::Init(void)
               WANTS_TOOLBAR_CALLBACK    |
               INSTALLS_TOOLBAR_TOOL     |
               WANTS_CONFIG             
-              //WANTS_PLUGIN_MESSAGING
             );
 }
 
@@ -123,15 +152,11 @@ bool obabel_pi::DeInit(void)
 {
     if(m_pobabelDialog) { 
 
-
-
 		m_pobabelDialog->Close();
         delete m_pobabelDialog;
         m_pobabelDialog = NULL;
     }
-
-	
-    
+   
 	delete m_pobabelOverlayFactory;
     m_pobabelOverlayFactory = NULL;
 
@@ -140,27 +165,29 @@ bool obabel_pi::DeInit(void)
 
 int obabel_pi::GetAPIVersionMajor()
 {
-      return MY_API_VERSION_MAJOR;
+    return atoi(API_VERSION);
 }
 
 int obabel_pi::GetAPIVersionMinor()
 {
-      return MY_API_VERSION_MINOR;
+    std::string v(API_VERSION);
+    size_t dotpos = v.find('.');
+    return atoi(v.substr(dotpos + 1).c_str());
 }
 
 int obabel_pi::GetPlugInVersionMajor()
 {
-      return PLUGIN_VERSION_MAJOR;
+    return PLUGIN_VERSION_MAJOR;
 }
 
 int obabel_pi::GetPlugInVersionMinor()
 {
-      return PLUGIN_VERSION_MINOR;
+    return PLUGIN_VERSION_MINOR;
 }
 
 wxBitmap *obabel_pi::GetPlugInBitmap()
 {
-      return _img_babel_pi;
+      return &m_panelBitmap;
 }
 
 wxString obabel_pi::GetCommonName()
