@@ -36,6 +36,7 @@
 #include <wx/stdpaths.h>
 
 #include "obabel_pi.h"
+#include "ocpn_plugin.h"
 
 // the class factories, used to create and destroy instances of the PlugIn
 
@@ -64,8 +65,8 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 //
 //---------------------------------------------------------------------------------------------------------
 
-obabel_pi::obabel_pi(void *ppimgr)
-      :opencpn_plugin_116(ppimgr)
+obabel_pi::obabel_pi(void* ppimgr)
+      : opencpn_plugin_116(ppimgr)
 {
       // Create the PlugIn icons
     initialize_images();

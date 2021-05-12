@@ -3,8 +3,10 @@
 #ifndef WX_PRECOMP
 #	include <wx/wx.h>
 #endif
-#include <wx/mstream.h>
+
 #include "icons.h"
+#include <wx/filename.h>
+#include <wx/mstream.h>
 
 wxBitmap *_img_babel_pi;
 wxBitmap *_img_babel;
