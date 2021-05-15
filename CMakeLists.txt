@@ -58,7 +58,7 @@ option(OBABEL_USE_SVG "Use SVG graphics" ON)
 #
 # -------  Plugin setup --------
 #
-project(obabel_pi VERSION 1.1.0.0)
+project(obabel_pi VERSION 1.2.0.0)
 set(PKG_PRERELEASE "")  # Empty, or a tag like 'beta'
 
 set(DISPLAY_NAME obabel)    # Dialogs, installer artifacts, ...

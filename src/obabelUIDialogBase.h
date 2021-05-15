@@ -70,7 +70,7 @@ class obabelUIDialogBase : public wxDialog
 
 		void WriteText(const wxString& text) { m_txtctrl->WriteText(text); }   
 
-		obabelUIDialogBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("oBabel KML/GPX exporter for Chartplotters"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxCAPTION|wxCLOSE_BOX|wxDIALOG_NO_PARENT|wxRESIZE_BORDER|wxSYSTEM_MENU ); 
+		obabelUIDialogBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("oBabel KML/GPX exporter for Chartplotters"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE| wxRESIZE_BORDER);
 		~obabelUIDialogBase();
 	
 };

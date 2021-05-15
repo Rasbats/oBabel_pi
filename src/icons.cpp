@@ -31,28 +31,17 @@ void initialize_images(void)
 
 #ifdef OBABEL_USE_SVG
 	wxFileName fn;
-	fn.SetPath(*GetpSharedDataLocation());
-	fn.AppendDir(_T("plugins"));
-	fn.AppendDir(_T("obabel_pi"));
-	fn.AppendDir(_T("data"));
-	fn.SetFullName(_T("obabel.svg"));
-	_svg_obabel = fn.GetFullPath();
-	fn.SetFullName(_T("obababel_toggled.svg"));
-	_svg_obabel_toggled = fn.GetFullPath();
-
-	/*
-	wxFileName fn;
 	wxString tmp_path;
 
-	tmp_path = GetPluginDataDir("ShipDriver_pi");
+	tmp_path = GetPluginDataDir("obabel_pi");
 	fn.SetPath(tmp_path);
 	fn.AppendDir(_T("data"));
 
-	fn.SetFullName(_T("shipdriver_pi.svg"));
-	_svg_shipdriver = fn.GetFullPath();
-	fn.SetFullName(_T("shipdriver_pi_toggled.svg"));
-	_svg_shipdriver_toggled = fn.GetFullPath();
-*/
+	fn.SetFullName(_T("obabel.svg"));
+	_svg_obabel = fn.GetFullPath();
+	fn.SetFullName(_T("obabel_toggled.svg"));
+	_svg_obabel_toggled = fn.GetFullPath();
+
 #endif // OBABEL_USE_SVG
 
 

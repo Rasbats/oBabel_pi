@@ -77,24 +77,21 @@ public:
       void SetColorScheme(PI_ColorScheme cs);
 
       void OnobabelDialogClose();
-
-      obabelOverlayFactory *GetobabelOverlayFactory(){ return m_pobabelOverlayFactory; }
 	  
 	  wxString m_GetDevice;
 	  wxString m_GetFormat;
 	  wxString m_GetExe;
+	  wxString m_GetComport;
 	  
-	  wxBitmap m_panelBitmap;
+	  
+	  wxWindow         *m_parent_window;
 
 private:
       bool LoadConfig(void);
       bool SaveConfig(void);
 
       wxFileConfig     *m_pconfig;
-      wxWindow         *m_parent_window;
-
-      obabelUIDialog       *m_pobabelDialog;
-      obabelOverlayFactory *m_pobabelOverlayFactory;
+      obabelUIDialog   *m_pobabelDialog;
 
       int              m_display_width, m_display_height;
       int              m_leftclick_tool_id;
@@ -107,7 +104,7 @@ private:
       bool              m_bobabelShowIcon;
       int               m_height;
       bool				m_bShowobabel;	  
-	  
+	  wxBitmap m_panelBitmap;
 };
 
 #endif

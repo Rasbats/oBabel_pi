@@ -113,7 +113,7 @@ int obabel_pi::Init(void)
       m_obabel_dialog_sx = 200;
       m_obabel_dialog_sy = 400;
       m_pobabelDialog = NULL;
-      m_pobabelOverlayFactory = NULL;
+      
 
       ::wxDisplaySize(&m_display_width, &m_display_height);
 
@@ -142,8 +142,7 @@ int obabel_pi::Init(void)
       }
       
       return (WANTS_OVERLAY_CALLBACK |
-              WANTS_OPENGL_OVERLAY_CALLBACK |
-              WANTS_CURSOR_LATLON       |
+              WANTS_OPENGL_OVERLAY_CALLBACK |              
               WANTS_TOOLBAR_CALLBACK    |
               INSTALLS_TOOLBAR_TOOL     |
               WANTS_CONFIG             
@@ -212,56 +211,24 @@ int obabel_pi::GetToolbarToolCount(void)
       return 1;
 }
 
+void obabel_pi::SetColorScheme(PI_ColorScheme cs)
+{
+	if (NULL == m_pobabelDialog)
+		return;
+
+	DimeWindow(m_pobabelDialog);
+}
+
+
 void obabel_pi::OnToolbarToolCallback(int id)
 {
-    if(!m_pobabelDialog)
-    {
-		        		
+	if (NULL == m_pobabelDialog)
+	{
 		m_pobabelDialog = new obabelUIDialog(m_parent_window, this);
-        wxPoint p = wxPoint(m_obabel_dialog_x, m_obabel_dialog_y);
-        m_pobabelDialog->Move(0,0);        // workaround for gtk autocentre dialog behavior
-        m_pobabelDialog->Move(p);
-        
-    }
+		m_pobabelDialog->Move(wxPoint(m_obabel_dialog_x, m_obabel_dialog_y));
+	}
 
-      // Qualify the obabel dialog position
-            bool b_reset_pos = false;
-
-#ifdef __WXMSW__
-        //  Support MultiMonitor setups which an allow negative window positions.
-        //  If the requested window does not intersect any installed monitor,
-        //  then default to simple primary monitor positioning.
-            RECT frame_title_rect;
-            frame_title_rect.left =   m_obabel_dialog_x;
-            frame_title_rect.top =    m_obabel_dialog_y;
-            frame_title_rect.right =  m_obabel_dialog_x + m_obabel_dialog_sx;
-            frame_title_rect.bottom = m_obabel_dialog_y + 30;
-
-
-            if(NULL == MonitorFromRect(&frame_title_rect, MONITOR_DEFAULTTONULL))
-                  b_reset_pos = true;
-#else
-       //    Make sure drag bar (title bar) of window on Client Area of screen, with a little slop...
-            wxRect window_title_rect;                    // conservative estimate
-            window_title_rect.x = m_obabel_dialog_x;
-            window_title_rect.y = m_obabel_dialog_y;
-            window_title_rect.width = m_obabel_dialog_sx;
-            window_title_rect.height = 30;
-
-            wxRect ClientRect = wxGetClientDisplayRect();
-            ClientRect.Deflate(60, 60);      // Prevent the new window from being too close to the edge
-            if(!ClientRect.Intersects(window_title_rect))
-                  b_reset_pos = true;
-
-#endif
-
-            if(b_reset_pos)
-            {
-                  m_obabel_dialog_x = 20;
-                  m_obabel_dialog_y = 170;
-                  m_obabel_dialog_sx = 300;
-                  m_obabel_dialog_sy = 540;
-            }
+	m_pobabelDialog->Fit();
 
       //Toggle obabel overlay display
       m_bShowobabel = !m_bShowobabel;
@@ -310,6 +277,7 @@ bool obabel_pi::LoadConfig(void)
 	pConf->Read ( _T ( "obabelformat" ),&m_GetFormat,wxEmptyString);
 	pConf->Read ( _T ( "obabeldevice" ),&m_GetDevice,wxEmptyString);
 	pConf->Read ( _T ( "obabelexe" ),&m_GetExe,wxEmptyString);
+	pConf->Read ( _T ( "obabelcomport" ), &m_GetComport, wxEmptyString);
 
     m_obabel_dialog_sx = pConf->Read ( _T ( "obabelDialogSizeX" ), 300L );
     m_obabel_dialog_sy = pConf->Read ( _T ( "obabelDialogSizeY" ), 540L );
@@ -332,6 +300,7 @@ bool obabel_pi::SaveConfig(void)
     pConf->Write ( _T ( "obabelformat" ), m_GetFormat );
     pConf->Write ( _T ( "obabeldevice" ), m_GetDevice);
 	pConf->Write ( _T ( "obabelexe" ), m_GetExe );
+	pConf->Write ( _T ( "obabelcomport" ), m_GetComport);
 
     pConf->Write ( _T ( "obabelDialogSizeX" ),  m_obabel_dialog_sx );
     pConf->Write ( _T ( "obabelDialogSizeY" ),  m_obabel_dialog_sy );
@@ -341,9 +310,3 @@ bool obabel_pi::SaveConfig(void)
 	
     return true;
 }
-
-void obabel_pi::SetColorScheme(PI_ColorScheme cs)
-{
-    DimeWindow(m_pobabelDialog);
-}
-

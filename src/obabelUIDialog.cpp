@@ -345,11 +345,12 @@ obabelUIDialog::obabelUIDialog(wxWindow *parent, obabel_pi *ppi)
     wxFileConfig *pConf = GetOCPNConfigObject();
 
     if(pConf) {
-        pConf->SetPath ( _T ( "/Settings/obabel" ) );
+        pConf->SetPath ( _T ( "/PlugIns/obabel" ) );
 
 		pConf->Read ( _T ( "obabeldevice" ), &pPlugIn->m_GetDevice );
         pConf->Read ( _T ( "obabelformat" ), &pPlugIn->m_GetFormat);
 		pConf->Read ( _T ( "obabelexe" ), &pPlugIn->m_GetExe);
+		pConf->Read ( _T ( "obabelcomport" ), &pPlugIn->m_GetComport);
     }
 
     this->Connect( wxEVT_MOVE, wxMoveEventHandler( obabelUIDialog::OnMove ) );
@@ -367,11 +368,10 @@ obabelUIDialog::obabelUIDialog(wxWindow *parent, obabel_pi *ppi)
 	m_device->SetStringSelection(pPlugIn->m_GetDevice);
 	m_format->SetStringSelection(pPlugIn->m_GetFormat);
 	m_textCtrl1->SetValue(pPlugIn->m_GetExe);
-
-    DimeWindow( this );
-
-    Fit();
-    SetMinSize( GetBestSize() );
+	m_choice1->SetStringSelection(pPlugIn->m_GetComport);
+	this->SetFocus();
+    this->Fit();
+   
 
 }
 
@@ -380,7 +380,7 @@ obabelUIDialog::~obabelUIDialog()
     wxFileConfig *pConf = GetOCPNConfigObject();;
 
     if(pConf) {
-        pConf->SetPath ( _T ( "/Settings/obabel" ) );
+        pConf->SetPath ( _T ( "/PlugIns/obabel" ) );
 
 		int c = m_choice1->GetSelection();
 		wxString myP = m_choice1->GetString(c);
