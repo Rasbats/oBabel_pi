@@ -539,20 +539,34 @@ void obabelUIDialog::SendBabelFile(wxCommandEvent& event){
                 wxT ( "GPX files (*.gpx)|*.gpx|All files (*.*)|*.*" ),
                 wxFD_OPEN);
      int response = openDialog.ShowModal();
-     if( response == wxID_OK ) {
+	 if (response == wxID_OK) {
 
-		m_file = openDialog.GetPath();
+		 m_file = openDialog.GetPath();
 
-		wxString spath;
-		spath = m_textCtrl1->GetValue();
-		bool b_exe = true;
-		if (spath.Right(5) == _T("e.exe")){
-			b_exe = false;
-		}
-		if (spath == wxEmptyString || !b_exe){
-			wxMessageBox(_T("GPSBabel program not found"), _T("GPSBabel"));
-			return;
-		}
+		 wxString spath;
+		 spath = m_textCtrl1->GetValue();
+		 bool b_exe = true;
+
+#if defined (__WXMSW__) 
+		 if (spath.Right(5) == _T("e.exe")) {
+			 b_exe = false;
+		 }
+		 if (spath == wxEmptyString || !b_exe) {
+			 wxMessageBox(_T("GPSBabel program not found"), _T("GPSBabel"));
+			 return;
+		 }
+#endif
+
+#if defined (__LNUX__)
+		 if (spath != "gpsbabel") {
+			 b_exe = false;
+		 }
+
+		 if (spath == wxEmptyString || !b_exe) {			 
+			 wxMessageBox(_T("\'gpsbabel\' needs entering in the box"), _T("GPSBabel"));
+			 return;
+		 }
+#endif
 		wxString transform = wxEmptyString;
 		int c = m_format->GetSelection();
 		wxString myFormat = m_format->GetString(c);
@@ -606,13 +620,26 @@ void obabelUIDialog::SendBabelClip(wxCommandEvent& event){
 	wxString spath;
 	spath = m_textCtrl1->GetValue();
     bool b_exe = true;
-	if (spath.Right(5) == _T("e.exe")){
+#if defined (__WXMSW__) 
+	if (spath.Right(5) == _T("e.exe")) {
 		b_exe = false;
 	}
-	if (spath == wxEmptyString || !b_exe){
+	if (spath == wxEmptyString || !b_exe) {
 		wxMessageBox(_T("GPSBabel program not found"), _T("GPSBabel"));
 		return;
 	}
+#endif
+
+#if defined (__LNUX__)
+	if (spath != "gpsbabel") {
+		b_exe = false;
+	}
+
+	if (spath == wxEmptyString || !b_exe) {
+		wxMessageBox(_T("\'gpsbabel\' needs entering in the box"), _T("GPSBabel"));
+		return;
+	}
+#endif
 
 	wxString cmdstart = spath + s_options[0] + _T(" -f ") + _T("\"") + babelfilename + _T("\"") + _T(" -x transform,rte=wpt ") + s_options[1];
 
