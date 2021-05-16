@@ -35,6 +35,8 @@
 #include <stdlib.h>
 #include "obabel_pi.h"
 #include "icons.h"
+#include "macutils.h"
+#include "macutils.c"
 
 
 using namespace std;
