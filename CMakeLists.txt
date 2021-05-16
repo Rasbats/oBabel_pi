@@ -84,8 +84,6 @@ SET(SRC
             src/obabelUIDialog.h
             src/icons.h
             src/icons.cpp
-            src/macutils.h
-            src/macutils.c
 	)
 
 # -------- Setup completed, build the plugin --------

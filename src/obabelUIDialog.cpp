@@ -296,9 +296,10 @@ wxArrayString *EnumerateSerialPorts( void )
     }
 
 #endif      // __WXGTK__
+
+/*
 #ifdef __WXOSX__
 #include "macutils.h"
-#include "macutils.c"
     char* paPortNames[MAX_SERIAL_PORTS];
     int iPortNameCount;
 
@@ -311,6 +312,7 @@ wxArrayString *EnumerateSerialPorts( void )
         free(paPortNames[iPortIndex]);
     }
 #endif      //__WXOSX__
+*/
 #ifdef __WXMSW__
     /*************************************************************************
      * Windows provides no system level enumeration of available serial ports
