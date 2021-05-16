@@ -35,7 +35,7 @@
 #include <stdlib.h>
 #include "obabel_pi.h"
 #include "icons.h"
-#include <windows.h>
+
 
 using namespace std;
 
