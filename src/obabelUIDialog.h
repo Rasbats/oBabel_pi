@@ -43,7 +43,7 @@
 #include <wx/utils.h>
 #include <wx/clipbrd.h>
 #include <wx/event.h>
-#include <wx/Ffile.h>
+#include <wx/ffile.h>
 #include <wx/filedlg.h>
 #include <wx/combobox.h>
 
