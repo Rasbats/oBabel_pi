@@ -49,13 +49,6 @@ wxArrayString *EnumerateSerialPorts( void )
 
 #ifdef __WXGTK__
 
-    //Initialize the pattern table
-    if( devPatern[0] == NULL ) {
-        paternAdd ( "ttyUSB" );
-        paternAdd ( "ttyACM" );
-        paternAdd ( "ttyGPS" );
-        paternAdd ( "refcom" );
-    }
 
  //  Looking for user privilege openable devices in /dev
  //  Fulup use scandir to improve user experience and support new generation of AIS devices.
