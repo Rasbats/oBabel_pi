@@ -35,8 +35,7 @@
 #include <stdlib.h>
 #include "obabel_pi.h"
 #include "icons.h"
-#include "macutils.h"
-#include "macutils.c"
+
 
 
 using namespace std;
@@ -299,6 +298,7 @@ wxArrayString *EnumerateSerialPorts( void )
 #endif      // __WXGTK__
 #ifdef __WXOSX__
 #include "macutils.h"
+#include "macutils.c"
     char* paPortNames[MAX_SERIAL_PORTS];
     int iPortNameCount;
 
