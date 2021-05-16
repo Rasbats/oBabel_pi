@@ -43,6 +43,12 @@ using namespace std;
 #define SetBitmap SetBitmapLabel
 #endif
 
+// reserve 4 pattern for plugins
+char* devPatern[] = {
+  NULL,NULL,NULL,NULL,
+  NULL,NULL,NULL,NULL, (char*)-1 };
+
+
 #if defined(__UNIX__) && !defined(__OCPN__ANDROID__) && !defined(__WXOSX__)
 // This filter verify is device is withing searched patern and verify it is openable
 // -----------------------------------------------------------------------------------
