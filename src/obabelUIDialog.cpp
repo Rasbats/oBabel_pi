@@ -43,6 +43,41 @@ using namespace std;
 #define SetBitmap SetBitmapLabel
 #endif
 
+#if defined(__UNIX__) && !defined(__OCPN__ANDROID__) && !defined(__WXOSX__)
+// This filter verify is device is withing searched patern and verify it is openable
+// -----------------------------------------------------------------------------------
+int paternFilter(const struct dirent * dir) {
+	char* res = NULL;
+	char  devname[272];
+	int   fd, ind;
+
+	// search if devname fits with searched paterns
+	for (ind = 0; devPatern[ind] != (char*)-1; ind++) {
+		if (devPatern[ind] != NULL) res = (char*)strcasestr(dir->d_name, devPatern[ind]);
+		if (res != NULL) break;
+	}
+
+	// File does not fit researched patern
+	if (res == NULL) return 0;
+
+	// Check if we may open this file
+	snprintf(devname, sizeof(devname), "/dev/%s", dir->d_name);
+	fd = open(devname, O_RDWR | O_NDELAY | O_NOCTTY);
+
+	// device name is pointing to a real device
+	if (fd >= 0) {
+		close(fd);
+		return 1;
+	}
+
+	// file is not valid
+	perror(devname);
+	return 0;
+}
+
+
+#endif
+
 wxArrayString *EnumerateSerialPorts( void )
 {
     wxArrayString *preturn = new wxArrayString;
@@ -70,14 +105,14 @@ wxArrayString *EnumerateSerialPorts( void )
 
 
 //        We try to add a few more, arbitrarily, for those systems that have fixed, traditional COM ports
-
+/*
     if( isTTYreal("/dev/ttyS0") )
         preturn->Add( _T("/dev/ttyS0") );
 
     if( isTTYreal("/dev/ttyS1") )
         preturn->Add( _T("/dev/ttyS1") );
 
-
+*/
 #endif
 
 #ifdef PROBE_PORTS__WITH_HELPER
