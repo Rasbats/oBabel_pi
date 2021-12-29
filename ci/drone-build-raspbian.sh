@@ -5,6 +5,14 @@
 #
 # Bugs: The buster build is real slow: https://forums.balena.io/t/85743
 
+# Copyright (c) 2021 Alec Leamas
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+
+
 set -xe
 
 curl http://mirrordirector.raspbian.org/raspbian.public.key  | apt-key add -
@@ -14,6 +22,8 @@ sudo apt-get -q update
 sudo apt-get install -q devscripts equivs
 sudo mk-build-deps -ir build-deps/control-raspbian
 sudo apt-get -q --allow-unauthenticated install -f
+
+git fetch --all --tags
 
 # Temporary fix until 3.19 is available as a pypi package
 # 3.19 is needed: https://gitlab.kitware.com/cmake/cmake/-/issues/20568
