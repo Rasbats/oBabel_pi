@@ -13,16 +13,16 @@
 # -------- Options ----------
 
 set(OCPN_TEST_REPO
-    "opencpn/obababel-alpha"
+    "opencpn/obabel-alpha"
     CACHE STRING "Default repository for untagged builds"
 )
 set(OCPN_BETA_REPO
-    "opencpn/obababel-beta"
+    "opencpn/obabel-beta"
     CACHE STRING
     "Default repository for tagged builds matching 'beta'"
 )
 set(OCPN_RELEASE_REPO
-    "opencpn/obababel-prod"
+    "opencpn/obabel-prod"
     CACHE STRING
     "Default repository for tagged builds not matching 'beta'"
 )
