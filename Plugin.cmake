@@ -29,7 +29,7 @@ set(OCPN_RELEASE_REPO
 
 option(OBABEL_USE_SVG "Use SVG graphics" ON)
 
-#
+
 #
 # -------  Plugin setup --------
 #
