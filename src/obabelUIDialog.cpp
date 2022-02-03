@@ -518,9 +518,9 @@ void obabelUIDialog::BuildOptions(){
 	c = m_device->GetSelection();
 	wxString myDevice = m_device->GetString(c);
 
-	if (myDevice == _T("garmin")){
-		myDevice.append(_T(",baud=9600"));
-	}
+	//if (myDevice == _T("garmin")){
+	//	myDevice.append(_T(",baud=9600"));
+	//}
 	
 	s_options[1].append(_T(" -o ") + myDevice);
 
@@ -621,7 +621,7 @@ void obabelUIDialog::SendBabelFile(wxCommandEvent& event){
 			}
 		}
 
-		wxString cmdstart = spath + s_options[0] + _T(" -f ") + _T("\"") + m_file + _T("\"") + transform + s_options[1];
+		wxString cmdstart = spath + s_options[0] + _T(" -f ")  + m_file  + transform + s_options[1];
 
 		wxMessageDialog *dial = new wxMessageDialog(NULL, cmdstart, wxT("Proceed?"), wxOK | wxCANCEL);
         response = dial->ShowModal();
